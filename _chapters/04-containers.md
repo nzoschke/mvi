@@ -9,13 +9,13 @@ We need Containers to package our app code and dependencies. We need a Container
 Containers depends on Instances for a host Operating System.
 
 ```
-┌──────────┐
-│┌────────┐│
-││ ┏━━━┓  ││
-││ ┃web┃  ││
-││ ┗━━━┛  ││
-││Instance││
-│└────────┘│
-│   VPC    │
-└──────────┘
+┌────────────────┐
+│┌──────────────┐│
+││┏━━━━━┓┏━━━━━┓││
+││┃web 1┃┃web 2┃││
+││┗━━━━━┛┗━━━━━┛││
+││   Instance   ││
+│└──────────────┘│
+│      VPC       │
+└────────────────┘
 ```
