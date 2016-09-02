@@ -40,5 +40,3 @@ The Rails Tutoral teaches you how to develop an application. Twelve-Factor teach
 The primary purpose is educational. Any technician can read this to better understand what services "the cloud" provides, why we need them, and how to use them.
 
 The secondary purpose is practical. Any developer or ops engineer can use the tutorials and tools to set up real production-ready infrastructure.
-
-The final purpose is strategic. Any decison maker can use this as a map to navigate the always evolving landscape of cloud services and cloud providers.
