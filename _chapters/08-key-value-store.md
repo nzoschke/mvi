@@ -2,7 +2,7 @@
 title: Key-Value Store
 ---
 
-A Key-Value (KV) Store service provides a way to save data in a HA fashion while still being easy to query for reporting purposes.
+A Key-Value (KV) Store service provides a way to save small amounts of structured data in a HA fashion while still being easy to query for reporting purposes.
 
 We need a KV Store to save and query metadata like a history of when builds were performed.
 
