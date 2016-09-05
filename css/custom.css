@@ -1,11 +1,12 @@
 pre {
-	width: 450px;
-	height: 350px;
+	width: 420px;
+	height: 340px;
+	float: right;
 }
 
 .language-ascii {
- display: inline-block; 
- font-family: Menlo, "Lucida Console", Monaco, monospace;
- line-height: 1.33em;
- /*text-shadow: 0 0 5px rgba(100,100,100,0.5);*/
+	font-size: 0.93em;
+	display: inline-block; 
+	font-family: Menlo, "Lucida Console", Monaco, monospace;
+	line-height: 1.33em;
 }

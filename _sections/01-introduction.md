@@ -33,10 +33,10 @@ This book enumerates the minimal infrastructure services that are available in t
 
 This book is inspired by Michael Hartl's [Ruby on Rails Tutorial](https://www.railstutorial.org/) and Adam Wiggins' [The Twelve-Factor App](https://12factor.net/).
 
-The Rails Tutoral teaches you how to develop an application. Twelve-Factor teaches you how to run your application as service. MVI teaches you how to assemble the underlying cloud services to support a Twelve-Factor Rails app.
+The Rails Tutoral teaches you how to develop an application. Twelve-Factor teaches you how to package your application to run as service. MVI teaches you how to assemble the underlying cloud services to support a Twelve-Factor Rails app.
 
 ## Who is this book for?
 
 The primary purpose is educational. Any technician can read this to better understand what services "the cloud" provides, why we need them, and how to use them.
 
-The secondary purpose is practical. Any developer or ops engineer can use the tutorials and tools to set up real production-ready infrastructure.
+The secondary purpose is practical. Any developer or ops engineer can use the tutorials and tools to set up real production-ready infrastructure for apps.
