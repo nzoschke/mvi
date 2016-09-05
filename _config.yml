@@ -27,6 +27,13 @@ github_username:  nzoschke
 markdown: kramdown
 theme: minima
 
+defaults:
+  - scope:
+      path: ""
+      type: services
+    values:
+      layout: service
+
 collections:
   sections:
     output: true
