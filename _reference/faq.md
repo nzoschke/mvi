@@ -2,6 +2,7 @@
 title: FAQ
 ---
 
-## Why do we need 4 datastores (Shared FS, KV, Blob and Databases)?
+## Why don't stand-alone services like a Registry use the VPC? Is this a security concern?
 
-## Why don't standalone services use the VPC? Is this a security concern?
+## Why do we need 4 datastores (Database, Shared FS, KV and Blob)?
+
