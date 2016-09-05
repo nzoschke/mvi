@@ -2,11 +2,7 @@
 title: Metrics
 ---
 
-A Metrics service provides a place to numerical data from infrastructure services, so operational properties from the entire system can be aggregated, analyzed and graphed for real-time and historical data.
-
-We need Metrics for an operator to get visibility into the availbility, performance and error rate in Containers and the supporting infrastructure.
-
-Metrics is a stand-alone service.
+A Metrics service provides a place to save numerical data so operational properties of the entire system can be aggregated, analyzed and graphed for real-time and historical data.
 
 ```ascii
      https                                        
@@ -28,3 +24,7 @@ Metrics is a stand-alone service.
         │Crypto││Registry││Logs││Metrics│         
         └──────┘└────────┘└────┘└───────┘         
 ```
+
+We need Metrics for an operator to get visibility into the availbility, performance and error rate in Containers and the supporting infrastructure.
+
+Metrics is a stand-alone service.

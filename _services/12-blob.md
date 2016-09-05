@@ -4,10 +4,6 @@ title: Blob Store
 
 A Blob Store service provides a way to save arbitrary sized unstructured data in a HA fashion.
 
-We need a Blob Store to put and get data that could be very large like application secret data or build logs.
-
-A Blob Store is a stand-alone service.
-
 ```ascii
      https                                        
   ┌────▽──────────────────────────────┐           
@@ -28,3 +24,7 @@ A Blob Store is a stand-alone service.
 │Crypto││Registry││Logs││Metrics││Key/Value││Blob│
 └──────┘└────────┘└────┘└───────┘└─────────┘└────┘
 ```
+
+We need a Blob Store to put and get data that could be very large like application secret data or build logs.
+
+A Blob Store is a stand-alone service.

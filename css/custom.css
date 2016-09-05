@@ -17,3 +17,7 @@ pre {
 .nav .next {
 	float: right;
 }
+
+.service p:first-of-type {
+	height: 50px;
+}
