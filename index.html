@@ -4,16 +4,8 @@ layout: default
 
 <div class="home">
 
-  {% for chapter in site.chapters %}
-    {% if forloop.index0 == 0 %}
-      <h1>{{ chapter.title }}</h1>
-      {{ chapter.content }}
-
-      <h1>Minimum Viable Infrastructure</h1>
-    {% else %}
-      <h2>{{ forloop.index0 }}. {{ chapter.title }}</h2>
-      <h3>{{ chapter.excerpt }}</h3>
-    {% endif %}
+  {% for s in site.sections %}
+    <h1>{{ s.title }}</h1>
+    {{ s.content }}
   {% endfor %}
-
 </div>

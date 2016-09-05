@@ -28,5 +28,7 @@ markdown: kramdown
 theme: minima
 
 collections:
-  chapters:
+  sections:
+    output: true
+  services:
     output: true
