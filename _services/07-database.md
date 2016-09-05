@@ -10,7 +10,7 @@ We need a Database service for application persistance and scaling. Multiple con
 A Database depends on a VPC for secure network access from Containers.
 
 
-```
+```ascii
      https                                        
   ┌────▽──────────────────────────────┐           
 ┌─┤           Load Balancer           ├──────────┐

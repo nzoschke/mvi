@@ -8,7 +8,7 @@ We need Metrics for an operator to get visibility into the availbility, performa
 
 Metrics is a stand-alone service.
 
-```
+```ascii
      https                                        
   ┌────▽──────────────────────────────┐           
 ┌─┤           Load Balancer           ├──────────┐

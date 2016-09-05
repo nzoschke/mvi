@@ -9,7 +9,7 @@ We need Containers to package our app code and dependencies. We need a Container
 
 Containers depend on Instances for a host Operating System and a Registry for application file system data. Containers use Crypto for decrypting application secrets.
 
-```
+```ascii
 ┌───────────────┐
 │┌─────────────┐│
 ││┏━━━┓┏━━━━━━┓││

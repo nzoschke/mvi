@@ -9,7 +9,7 @@ We need a Registry to efficiently store layers of new file system data for app b
 
 A Registry is a stand-alone service.
 
-```
+```ascii
 ┌────────────────┐
 │┌──────────────┐│
 ││┏━━━┓ ┏━━━━━━┓││

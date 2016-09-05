@@ -1,0 +1,11 @@
+pre {
+	width: 450px;
+	height: 350px;
+}
+
+.language-ascii {
+ display: inline-block; 
+ font-family: Menlo, "Lucida Console", Monaco, monospace;
+ line-height: 1.33em;
+ /*text-shadow: 0 0 5px rgba(100,100,100,0.5);*/
+}

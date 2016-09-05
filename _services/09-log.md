@@ -9,7 +9,7 @@ We need Logs for an operator to get visibility into all the events happening in 
 
 Logs is a stand-alone service.
 
-```
+```ascii
      https                                        
   ┌────▽──────────────────────────────┐           
 ┌─┤           Load Balancer           ├──────────┐

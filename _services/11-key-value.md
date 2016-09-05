@@ -8,7 +8,7 @@ We need a KV Store to save and query metadata like a history of when builds were
 
 A KV Store is a stand-alone service.
 
-```
+```ascii
      https                                        
   ┌────▽──────────────────────────────┐           
 ┌─┤           Load Balancer           ├──────────┐

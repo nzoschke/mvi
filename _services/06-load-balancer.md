@@ -10,7 +10,7 @@ We need a Load Balancer service for application scaling and High Availability (H
 Load Balancers depend on Containers to return a response for forwarded requests.
 
 
-```
+```ascii
      https                              
   ┌────▽──────────────────────────────┐ 
 ┌─┤           Load Balancer           ├┐

@@ -8,7 +8,7 @@ We need a Blob Store to put and get data that could be very large like applicati
 
 A Blob Store is a stand-alone service.
 
-```
+```ascii
      https                                        
   ┌────▽──────────────────────────────┐           
 ┌─┤           Load Balancer           ├──────────┐

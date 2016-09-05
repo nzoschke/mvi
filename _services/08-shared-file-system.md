@@ -9,7 +9,7 @@ We want a Shared FS service for persistence as Containers move around on Instanc
 
 A Shared File System depends on a VPC for network availability. It is the Instance's responsibility to mount the file system and make it available to Containers
 
-```
+```ascii
      https                                        
   ┌────▽──────────────────────────────┐           
 ┌─┤           Load Balancer           ├──────────┐

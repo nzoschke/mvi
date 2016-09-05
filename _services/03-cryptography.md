@@ -9,7 +9,7 @@ We need Crypto to encrypt sensitive data like Instance and application secrets s
 
 Crypto is a stand-alone service.
 
-```
+```ascii
 ┌──────────┐
 │┌────────┐│
 ││Instance││
@@ -19,4 +19,4 @@ Crypto is a stand-alone service.
   ┌──────┐  
   │Crypto│  
   └──────┘  
- ```
+```
