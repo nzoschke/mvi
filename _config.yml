@@ -30,6 +30,10 @@ theme: minima
 defaults:
   - scope:
       path: ""
+    values:
+      layout: default
+  - scope:
+      path: ""
       type: services
     values:
       layout: service
@@ -38,4 +42,6 @@ collections:
   sections:
     output: true
   services:
+    output: true
+  tutorials:
     output: true

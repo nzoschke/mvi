@@ -10,3 +10,10 @@ pre {
 	font-family: Menlo, "Lucida Console", Monaco, monospace;
 	line-height: 1.33em;
 }
+
+.nav {
+	clear: both;
+}
+.nav .next {
+	float: right;
+}
