@@ -22,7 +22,7 @@ The responsibilities are clear:
 3. Providers operate the underlying cloud services
 4. Software automates changes to the architecture that offer security, performance or cost improvements
 
-The "Minimumal Infrastructure" methodology is derived from this.
+The "Minimal Infrastructure" methodology is derived from this.
 
 If we understand the simplest set of primative infrastructure services needed to run any application, we can tell a cloud service provider how to set them up to bring our app online.
 
