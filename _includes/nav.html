@@ -2,31 +2,11 @@
   <span class="prev">
     {% if page.previous.url %}
       <a href="{{ page.previous.url }}">Prev: {{ page.previous.title }}</a>
-    {% else %}
-      {% if page.collection %}
-        {% for c in site.collections %}
-          {% if c.label == page.collection %}
-            <a href="{{ pc.docs[0].url }}">Prev: {{ pc.docs[0].title }}</a>
-          {% endif %}
-          {% assign pc = site.collections[forloop.index0] %}
-        {% endfor %}
-      {% endif %}
     {% endif %}
   </span>
   <span class="next">
     {% if page.next.url %}
       <a href="{{ page.next.url }}">Next: {{ page.next.title }}</a>
-    {% else %}
-      {% if page.collection %}
-        {% for c in site.collections %}
-          {% assign nc = site.collections[forloop.index] %}
-          {% if c.label == page.collection %}
-            <a href="{{ nc.docs[0].url }}">Next: {{ nc.docs[0].title }}</a>
-          {% endif %}
-        {% endfor %}
-      {% else %}
-        <a href="{{ site.collections[2].docs[0].url }}">Next: {{ site.collections[2].docs[0].title }}</a>
-      {% endif %}
     {% endif %}
   </span>
 </div>

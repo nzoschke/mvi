@@ -1,14 +1,26 @@
-pre {
-	width: 420px;
-	height: 340px;
+h1 + pre, h1 + div.language-yaml pre {
 	float: right;
+	width: 50%;
+}
+
+h1 + pre + p, h1 + div.language-yaml pre + p {
+	width: 50%;
+}
+
+h4 {
+	clear: both;
+}
+
+h4 {
+	font-size: 1.3em;
+	padding: 10px 0;
 }
 
 .language-ascii {
-	font-size: 0.93em;
+	font-size: 0.82em;
 	display: inline-block; 
 	font-family: Menlo, "Lucida Console", Monaco, monospace;
-	line-height: 1.33em;
+	line-height: 1.30em;
 }
 
 .nav {
