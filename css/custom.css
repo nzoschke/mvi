@@ -1,9 +1,12 @@
-h1 + pre, h1 + div.language-yaml pre {
+h1 + pre,
+h1 + div.language-yaml pre {
 	float: right;
 	width: 50%;
+	margin-left: 30px;
 }
 
-h1 + pre + p, h1 + div.language-yaml pre + p {
+h1 + pre + p,
+h1 + div.language-yaml pre + p {
 	width: 50%;
 }
 
@@ -28,8 +31,4 @@ h4 {
 }
 .nav .next {
 	float: right;
-}
-
-.service p:first-of-type {
-	height: 50px;
 }
