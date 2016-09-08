@@ -1,5 +1,6 @@
 ---
 title: Glossary
+permalink: /glossary/
 ---
 
 * Application Manifest
