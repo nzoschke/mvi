@@ -1,6 +1,6 @@
 ---
 title: FAQ
-permalink: /faq/
+permalink: /faq
 ---
 
 ## Why don't stand-alone services like a Registry use the VPC? Is this a security concern?

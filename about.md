@@ -1,6 +1,6 @@
 ---
 title: About
-permalink: /about/
+permalink: /about
 ---
 
 Copyright 2016 Noah Zoschke

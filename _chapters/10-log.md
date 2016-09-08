@@ -1,5 +1,6 @@
 ---
 title: Log
+permalink: /log/
 ---
 
 # Log

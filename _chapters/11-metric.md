@@ -1,5 +1,6 @@
 ---
 title: Metric
+permalink: /metric/
 ---
 
 # Metric

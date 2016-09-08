@@ -1,5 +1,6 @@
 ---
 title: Container
+permalink: /container/
 ---
 
 # Container

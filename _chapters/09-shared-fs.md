@@ -1,5 +1,6 @@
 ---
 title: Shared File System
+permalink: /shared-fs/
 ---
 
 # Shared File System

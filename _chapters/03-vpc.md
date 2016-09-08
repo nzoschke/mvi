@@ -1,5 +1,6 @@
 ---
 title: Virtual Private Cloud
+permalink: /vpc/
 ---
 
 # Virtual Private Cloud

@@ -74,55 +74,55 @@ We first need a secure computing layer. Then we can add our application specific
 
 #### Secure Compute
 
-### [1. Virtual Machine](/vm)
+### [1. Virtual Machine](vm)
 
 A Virtual Machine (VM) service provides CPU, Memory, Networking and a server Operating System.
 
-### [2. Virtual Private Cloud](/vpc)
+### [2. Virtual Private Cloud](vpc)
 
 A Virtual Private Cloud (VPC) service provides private networking.
 
-### [3. Cryptography](/crypto)
+### [3. Cryptography](crypto)
 
 A Cryptography (Crypto) service provides a way to create, import and rotate an unguessable key for encrypting data, and provides a way to get and audit access to the key for decrypting data.
 
 #### Application Workload
 
-### [4. Container](/container)
+### [4. Container](container)
 
 A Container service provides a way to run many specialized process types on fewer homogeneous VMs.
 
-### [5. Registry](/registry)
+### [5. Registry](registry)
 
 A Registry service provides a private place to push, store and pull Container Image data.
 
-### [6. Load Balancer](/load-balancer)
+### [6. Load Balancer](load-balancer)
 
 A Load Balancer service provides a single, stable hostname that accepts network requests and forwards them to one or more healthy containers.
 
-### [7. Database](/database)
+### [7. Database](database)
 
 A Database service provides a single network hostname that is used to save, update and delete application data records concurrently by one or more containers.
 
-### [8. Shared File System](/shared-fs)
+### [8. Shared File System](shared-fs)
 
 A Shared FS service provides a single directory of files that are synchronized across one or more containers.
 
 #### Operations
 
-### [9. Log](/log)
+### [9. Log](log)
 
 A Log service provides a place to send text from an app's stdout and stderr streams, so events from more than one container can be aggregated, tailed in real-time and searched for historical data.
 
-### [10. Metric](/metric)
+### [10. Metric](metric)
 
 A Metric service provides a place to save numerical data so operational properties of the entire system can be aggregated, analyzed and graphed for real-time and historical data.
 
-### [11. Key/Value (KV)](/kv)
+### [11. Key/Value (KV)](kv)
 
 A KV service provides a way to save small amounts of structured data in a HA fashion while still being easy to query for reporting purposes.
 
-### [12. Blob](/blob)
+### [12. Blob](blob)
 
 A Blob service provides a way to save and retrieve arbitrary sized unstructured data in a HA fashion.
 
