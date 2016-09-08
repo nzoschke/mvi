@@ -74,17 +74,17 @@ We first need a secure computing layer. Then we can add our application specific
 
 #### Secure Compute
 
-### [1. Virtual Machine (VMs)](/vm)
+### [1. Virtual Machine](/vm)
 
 A Virtual Machine (VM) service provides CPU, Memory, Networking and a server Operating System.
 
-### [2. Virtual Private Cloud (VPC)](/vpc)
+### [2. Virtual Private Cloud](/vpc)
 
 A Virtual Private Cloud (VPC) service provides private networking.
 
-### [3. Cryptography (Crypto)](/crypto)
+### [3. Cryptography](/crypto)
 
-A Crypto service provides a way to create, import and rotate an unguessable key for encrypting data, and provides a way to get and audit access to the key for decrypting data.
+A Cryptography (Crypto) service provides a way to create, import and rotate an unguessable key for encrypting data, and provides a way to get and audit access to the key for decrypting data.
 
 #### Application Workload
 
@@ -104,7 +104,7 @@ A Load Balancer service provides a single, stable hostname that accepts network 
 
 A Database service provides a single network hostname that is used to save, update and delete application data records concurrently by one or more containers.
 
-### [8. Shared File System (FS)](/shared-fs)
+### [8. Shared File System](/shared-fs)
 
 A Shared FS service provides a single directory of files that are synchronized across one or more containers.
 
