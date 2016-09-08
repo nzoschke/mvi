@@ -18,8 +18,8 @@ email: noah@convox.com
 description: > # this means to ignore newlines until "baseurl:"
   What is the simplest set cloud services to run an applications?
   How do we assemble them?
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://convox.com/mi" # the base hostname & protocol for your site
+baseurl: "/mi" # the subpath of your site, e.g. /blog
+url: "https://nzoschke.github.io" # the base hostname & protocol for your site
 twitter_username: nzoschke
 github_username:  nzoschke
 
