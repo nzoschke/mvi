@@ -1,8 +1,8 @@
 ---
-title: Shared File System
+title: Log
 ---
 
-# Shared File System
+# Log
 
 ```ascii
  ┌──────────────────────────────────────────────┐ 
@@ -19,13 +19,13 @@ title: Shared File System
 │└────────────────────────────────────┘└────────┘│
 │                      VPC                       │
 └────────────────────────────────────────────────┘
-┌──────┐┌────────┐                                
-│Crypto││Registry│                                
-└──────┘└────────┘                                
+┌──────┐┌────────┐┌───┐                           
+│Crypto││Registry││Log│                           
+└──────┘└────────┘└───┘                           
 ```
 
-A Shared File System (FS) service provides a directory of data that is synchronized across two or more containers.
+A Log service provides a place to send text from an app's stdout and stderr streams, so events from more than one Container can be aggregated, tailed in real-time and searched for historical data.
 
-We want a Shared FS service for persistence as Containers move around on VMs.
+We need Logs for an operator to get visibility into all the events happening in Containers and on VMs.
 
-A Shared FS depends on a VPC for network availability. It is the VMs responsibility to mount the file system and make it available to Containers. Function Containers may not be able to access a Shared FS.
+A Log service is a stand-alone service.

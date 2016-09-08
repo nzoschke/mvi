@@ -1,8 +1,8 @@
 ---
-title: Shared File System
+title: Metric
 ---
 
-# Shared File System
+# Metric
 
 ```ascii
  ┌──────────────────────────────────────────────┐ 
@@ -19,13 +19,13 @@ title: Shared File System
 │└────────────────────────────────────┘└────────┘│
 │                      VPC                       │
 └────────────────────────────────────────────────┘
-┌──────┐┌────────┐                                
-│Crypto││Registry│                                
-└──────┘└────────┘                                
+┌──────┐┌────────┐┌───┐┌──────┐                   
+│Crypto││Registry││Log││Metric│                   
+└──────┘└────────┘└───┘└──────┘                   
 ```
 
-A Shared File System (FS) service provides a directory of data that is synchronized across two or more containers.
+A Metric service provides a place to save numerical data so operational properties of the entire system can be aggregated, analyzed and graphed for real-time and historical data.
 
-We want a Shared FS service for persistence as Containers move around on VMs.
+We need Metrics for an operator to get visibility into the availbility, performance and error rate in Containers and the supporting infrastructure.
 
-A Shared FS depends on a VPC for network availability. It is the VMs responsibility to mount the file system and make it available to Containers. Function Containers may not be able to access a Shared FS.
+A Metric service is a stand-alone service.

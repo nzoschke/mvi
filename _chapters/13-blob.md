@@ -1,8 +1,8 @@
 ---
-title: Shared File System
+title: Blob
 ---
 
-# Shared File System
+# Blob
 
 ```ascii
  ┌──────────────────────────────────────────────┐ 
@@ -19,13 +19,13 @@ title: Shared File System
 │└────────────────────────────────────┘└────────┘│
 │                      VPC                       │
 └────────────────────────────────────────────────┘
-┌──────┐┌────────┐                                
-│Crypto││Registry│                                
-└──────┘└────────┘                                
+┌──────┐┌────────┐┌───┐┌──────┐┌──┐┌────┐         
+│Crypto││Registry││Log││Metric││KV││Blob│         
+└──────┘└────────┘└───┘└──────┘└──┘└────┘         
 ```
 
-A Shared File System (FS) service provides a directory of data that is synchronized across two or more containers.
+A Blob service provides a way to save arbitrary sized unstructured data in a HA fashion.
 
-We want a Shared FS service for persistence as Containers move around on VMs.
+We need a Blob service to put and get data that could be very large like application secret data or build logs.
 
-A Shared FS depends on a VPC for network availability. It is the VMs responsibility to mount the file system and make it available to Containers. Function Containers may not be able to access a Shared FS.
+A Blob service is a stand-alone service.
