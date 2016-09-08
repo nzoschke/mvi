@@ -76,7 +76,7 @@ We first need a secure computing layer. Then we can add our application specific
 
 ### [1. Virtual Machine (VMs)](/vm)
 
-A VM service provides a virtual machine with CPU, Memory, Networking and a server Operating System.
+A Virtual Machine (VM) service provides CPU, Memory, Networking and a server Operating System.
 
 ### [2. Virtual Private Cloud (VPC)](/vpc)
 
