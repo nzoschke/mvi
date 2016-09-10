@@ -19,6 +19,16 @@ h4 {
 	padding: 10px 0;
 }
 
+div.language-yaml pre {
+	float: left;
+	width: 45%;
+	margin-right: 10px;
+}
+
+pre {
+	width: 45%;
+}
+
 .language-ascii {
 	font-size: 0.82em;
 	display: inline-block; 
