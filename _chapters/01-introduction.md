@@ -15,11 +15,10 @@ The best practices are understood:
 
 The responsibilities are clear:
 
-1. A **community of experts** designs simple cloud service architectures
-2. **You** provide an [application manifest](glossary#application-manifest) file that declares what your app needs
-3. **Software** automates cloud service setup
-4. **Providers** operate the underlying cloud services
-5. **Software** monitors the services and automates failures
+1. **You** provide an application and a [manifest](glossary#application-manifest) file that declares what your app needs
+2. A **community** designs a simple cloud service architecture
+3. **Providers** operate the cloud services
+4. **Software** automates cloud service setup, monitoring and maintenance
 
 The "Minimum Infrastructure" methodology is derived from this.
 
@@ -29,7 +28,7 @@ If a provider runs the cloud services with a high [Quality-of-Service](glossary#
 
 Furthermore, we can apply this methodolgy over the entire lifecycle of an app. When we can safely automate the services supporting our app, we can maintain availability and add further simplicity, security, performance and cost improvements over time.
 
-This book enumerates a simple set of infrastructure services that are availble in the cloud and assembles them into a simple architecture. It then guides us through how manage these services to support simple to increasingly complex apps.
+This book enumerates a simple set of infrastructure services that are availble in the cloud and assembles them into a simple architecture. It then guides us through how manage these services to support almost any app, from simple to complex.
 
 ## Background
 
