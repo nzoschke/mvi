@@ -13,10 +13,10 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Minimal Infrastructure
+title: Minimum Infrastructure
 email: noah@convox.com
 description: > # this means to ignore newlines until "baseurl:"
-  What is the simplest set cloud services to run an applications?
+  What is the cloud services do we need to run an applications?
   How do we assemble them?
 baseurl: "/mi" # the subpath of your site, e.g. /blog
 url: "https://nzoschke.github.io" # the base hostname & protocol for your site
