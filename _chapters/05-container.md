@@ -1,6 +1,6 @@
 ---
 title: Container
-permalink: /container/
+permalink: /container
 ---
 
 # Container

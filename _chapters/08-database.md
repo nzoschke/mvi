@@ -1,6 +1,6 @@
 ---
 title: Database
-permalink: /database/
+permalink: /database
 ---
 
 # Database

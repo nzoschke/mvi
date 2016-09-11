@@ -1,6 +1,6 @@
 ---
 title: Cryptography
-permalink: /crypto/
+permalink: /crypto
 ---
 
 # Cryptography

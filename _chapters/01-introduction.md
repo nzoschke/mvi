@@ -130,9 +130,9 @@ These tutorials demonstrate how we use and configure the cloud services to suppo
 
 #### Dependencies / Build, Release, Run
 
-* Run Hello World
-* Build Dependencies into a Container Image
-* Release a Build
+* [Run Hello World](hello-world)
+* [Build a Custom Image](build)
+* [Release a Build](release)
 
 #### Processes / Concurrency / Admin Processes
 
@@ -145,6 +145,7 @@ These tutorials demonstrate how we use and configure the cloud services to suppo
 
 * Scaling and Securing a Web Server for APIs
 * Scaling and Securing a TCP Service
+* Health Checks
 
 #### Config / Backing Services
 

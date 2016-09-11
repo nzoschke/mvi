@@ -1,6 +1,6 @@
 ---
 title: Registry
-permalink: /registry/
+permalink: /registry
 ---
 
 # Registry

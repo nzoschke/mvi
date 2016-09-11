@@ -1,6 +1,6 @@
 ---
 title: Blob
-permalink: /blob/
+permalink: /blob
 ---
 
 # Blob

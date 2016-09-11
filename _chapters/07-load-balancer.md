@@ -1,6 +1,6 @@
 ---
 title: Load Balancer
-permalink: /load-balancer/
+permalink: /load-balancer
 ---
 
 # Load Balancer
