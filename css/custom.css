@@ -19,13 +19,15 @@ h4 {
 	padding: 10px 0;
 }
 
-div.language-yaml pre {
+div.language-yaml.left,
+pre.left {
 	float: left;
-	width: 45%;
+	width: 50%;
 	margin-right: 10px;
 }
 
-pre {
+div.language-yaml.right,
+pre.right {
 	width: 45%;
 }
 

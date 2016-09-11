@@ -20,6 +20,7 @@ Docker Hub offers a pre-built Apache [httpd Image](https://hub.docker.com/_/http
 web:
   image: httpd
 ```
+{:.left}
 
 ```ascii
 ┌───────┐
@@ -32,21 +33,13 @@ web:
 │  VPC  │
 └───────┘
 ```
+{:.right}
 
 However, making a request to this Container poses a challenge.
 
 First, the VPC blocks all network access by default. Next, the VM network address will change if it fails and is replaced. Finally, the Container may not be able to serve the request if it is booting or offline due to a crash or VM failure.
 
-So we need a Load Balancer service and some redundancy.
-
-The Load Balancer will provide a static hostname that is accessable over the Internet and coordinate what internal addresses it should forward a request to.
-
-The Load Balancer will ask for minimal access into the VPC, only the HTTP protocol to a single VM and Container port.
-
-The Container Service will tell the Load Balancer about any changes to Container network addresses as VMs and Containers start and stop due to maintenance or failures.
-
-The Load Balancer will also maintain its own view of what Containers are returning healthy responses. If a Container is repeatedly failing, the Load Balancer can divert traffic from it to a healthy Container.
-
+So we need a Load Balancer service, port configuration, and VM and Container redundancy.
 
 ```yaml
 web:
@@ -54,6 +47,7 @@ web:
   ports:
     - 80:80
 ```
+{:.left}
 
 ```ascii
  ┌────────────────┐ 
@@ -68,6 +62,15 @@ web:
 │       VPC        │
 └──────────────────┘
 ```
+{:.right}
+
+The Load Balancer will provide a static hostname that is accessable over the Internet and coordinate what internal addresses it should forward a request to.
+
+The Load Balancer will ask for minimal access into the VPC, only the HTTP protocol to a single VM and Container port.
+
+The Container Service will tell the Load Balancer about any changes to Container network addresses as VMs and Containers start and stop due to maintenance or failures.
+
+The Load Balancer will also maintain its own view of what Containers are returning healthy responses. If a Container is repeatedly failing, the Load Balancer can divert traffic from it to a healthy Container.
 
 The manifest and architecture to reliably run "Hello World" is simple.
 
