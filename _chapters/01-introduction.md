@@ -15,12 +15,12 @@ The best practices are understood:
 
 The responsibilities are clear:
 
-1. **You** provide an application and a [manifest](glossary#application-manifest) file that declares what your app needs
-2. A **community** designs a simple cloud service architecture
+1. **You** provide an application code base and configuration files that declares what the app needs
+2. A **community** designs the simplest possible cloud service architecture to satisfy the app needs
 3. **Providers** operate the cloud services
 4. **Software** automates cloud service setup, monitoring and maintenance
 
-The "Minimum Infrastructure" methodology is derived from this.
+The "Minimum Viable Infrastructure" methodology is derived from this.
 
 If we, as a community, design a simple cloud service architecture to run any application, we can automate the configuration of cloud services to bring an app online.
 
@@ -36,7 +36,7 @@ This book is inspired by Michael Hartl's [Ruby on Rails Tutorial](https://www.ra
 
 The Rails Tutoral teaches you how to develop an application. Twelve-Factor teaches you how to package your application to run as service.
 
-Minimum Infrastructure teaches you how to assemble the underlying cloud services to support a Twelve-Factor Rails app.
+Minimum Viable Infrastructure teaches you how to assemble the underlying cloud services to support a Twelve-Factor Rails app.
 
 ## Who is this book for?
 
