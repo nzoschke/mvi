@@ -34,9 +34,9 @@ This book enumerates a simple set of infrastructure services that are availble i
 
 This book is inspired by Michael Hartl's [Ruby on Rails Tutorial](https://www.railstutorial.org/) and Adam Wiggins' [The Twelve-Factor App](https://12factor.net/).
 
-The Rails Tutoral teaches you how to develop an application. Twelve-Factor teaches you how to package your application to run as service.
+The Rails Tutoral teaches you how to develop an application. Twelve-Factor teaches you how to package an application to run as service.
 
-Minimum Viable Infrastructure teaches you how to assemble the underlying cloud services to support a Twelve-Factor Rails app.
+Minimum Viable Infrastructure teaches you how to assemble cloud services to support an app.
 
 ## Who is this book for?
 
@@ -46,29 +46,29 @@ The secondary purpose is practical. Any developer or ops engineer can use the me
 
 # Cloud Services
 
-```ascii
- ┌──────────────────────────────────────────────┐ 
-┌┤                Load Balancer                 ├┐
-│└──────────────────────────────────────────────┘│
-│┌─────────────────┐┌─────────────────┐          │
-││┏━━━━━┓┏━━━━━━━━┓││      ┏━━━━━┓    │ ┏━━━━━━┓ │
-││┃web 1┃┃worker 1┃││      ┃web 2┃    │ ┃ func ┃ │
-││┗━━━━━┛┗━━━━━━━━┛││      ┗━━━━━┛    │ ┗━━━━━━┛ │
-││      VM 1       ││      VM 2       │┌────────┐│
-│└─────────────────┘└─────────────────┘│        ││
-│┌────────────────────────────────────┐│Database││
-││         Shared File System         ││        ││
-│└────────────────────────────────────┘└────────┘│
-│                      VPC                       │
-└────────────────────────────────────────────────┘
-┌──────┐┌────────┐┌───┐┌──────┐┌──┐┌────┐         
-│Crypto││Registry││Log││Metric││KV││Blob│         
-└──────┘└────────┘└───┘└──────┘└──┘└────┘         
+```text
+ ┌─────────────────────────────────────┐ 
+┌┤            Load Balancer            ├┐
+│└─────────────────────────────────────┘│
+│┌─────────────────┐ ┌─────────────────┐│
+││┌─────┐┌────────┐│ │     ┌─────┐     ││
+│││web 1││worker 1││ │     │web 2│     ││
+││└─────┘└────────┘│ │     └─────┘     ││
+││      VM 1       │ │      VM 2       ││
+│└─────────────────┘ └─────────────────┘│
+│               ┌────────┐              │
+│               │Database│              │
+│               └────────┘              │
+│                  VPC                  │
+└───────────────────────────────────────┘
+┌──────┐┌────────┐┌───┐┌──────┐┌──┐┌────┐
+│Crypto││Registry││Log││Metric││KV││Blob│
+└──────┘└────────┘└───┘└──────┘└──┘└────┘
 ```
 
-There are twelve infrastructure services in three service classes that are necessary to run an app.
+There are eleven infrastructure services in three service classes that are necessary to run an app.
 
-We first need a secure computing services. Then we add services to support our application specific processes and data. Finally we need utility services to see how our app is running and to manage its lifecycle.
+First, we need a base secure computing service layer. Next, we need services to support our application specific processes and data. Last, we need utility services that provide visibility into how the app is running over its lifecycle.
 
 #### Secure Compute
 
@@ -102,25 +102,21 @@ A Load Balancer service provides a single, stable hostname that accepts network 
 
 A Database service provides a single network hostname that is used to save, update and delete application data records concurrently by one or more Containers.
 
-### [8. Shared File System](shared-fs)
+#### Visibility
 
-A Shared File System (FS) service provides a single directory of files that are synchronized across one or more Containers.
-
-#### Operations
-
-### [9. Log](log)
+### [8. Log](log)
 
 A Log service provides a place to send ordered text from app Containers' stdout and stderr streams, so all the application events can be tailed in real-time and searched later.
 
-### [10. Metric](metric)
+### [9. Metric](metric)
 
 A Metric service provides a place to save numerical data from apps and underlying cloud srevices so operational properties of the entire system can be aggregated, analyzed and graphed in real-time and reviewed later.
 
-### [11. Key-Value (KV)](kv)
+### [10. Key-Value (KV)](kv)
 
 A Key-Value (KV) service provides a way to save small amounts of structured data in a [highly-available](glossary#highly-available) (HA) fashion while still being easy to query for reporting purposes.
 
-### [12. Blob](blob)
+### [11. Blob](blob)
 
 A Blob service provides a way to save and retrieve large amounts unstructured data in a HA fashion.
 
@@ -128,20 +124,20 @@ A Blob service provides a way to save and retrieve large amounts unstructured da
 
 These tutorials demonstrate how we use and configure the cloud services to support the Twelve-Factor methods:
 
-#### Dependencies / Build, Release, Run
+#### Build, Release, Run
 
 * [Run Hello World](hello-world)
 * [Build a Custom Image](build)
 * [Release a Build](release)
 
-#### Processes / Concurrency / Admin Processes
+#### Containers
 
 * Scaling Workers for Data Science
 * Scheduled Processes
 * Debugging a Running Container
 * Running One-Off Containers
 
-#### Port Binding
+#### Load Balancers
 
 * Scaling and Securing a Web Server for APIs
 * Scaling and Securing a TCP Service
@@ -153,11 +149,11 @@ These tutorials demonstrate how we use and configure the cloud services to suppo
 * Linking Containers
 * Linking to a Database
 
-#### Logs
+#### Visibility
 
 * Tailing App Logs
 * Processing App Logs
-* Visualizing App Performance and Availability
+* Seeing App Performance and Availability
 
 # Real-World Tutorials
 
