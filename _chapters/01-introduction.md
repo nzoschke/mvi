@@ -120,7 +120,7 @@ A Key-Value (KV) service provides a way to save small amounts of structured data
 
 A Blob service provides a way to save and retrieve large amounts unstructured data in a HA fashion.
 
-# Twelve-Factor Tutorials
+# Tutorials
 
 These tutorials demonstrate how we use and configure the cloud services to support the Twelve-Factor methods:
 
