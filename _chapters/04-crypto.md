@@ -5,7 +5,7 @@ permalink: /crypto
 
 # Cryptography
 
-```ascii
+```text
 ┌────────────────────────────────────────────────┐
 │                                                │
 │                                                │

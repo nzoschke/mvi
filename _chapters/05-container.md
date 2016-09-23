@@ -5,7 +5,7 @@ permalink: /container
 
 # Container
 
-```ascii
+```text
 ┌────────────────────────────────────────────────┐
 │                                                │
 │                                                │

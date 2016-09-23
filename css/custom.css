@@ -1,11 +1,11 @@
-h1 + pre,
+h1 + div.language-text pre,
 h1 + div.language-yaml pre {
 	float: right;
 	width: 50%;
 	margin-left: 30px;
 }
 
-h1 + pre + p,
+h1 + div.language-text pre + p,
 h1 + div.language-yaml pre + p {
 	width: 50%;
 }
@@ -20,18 +20,25 @@ h4 {
 }
 
 div.language-yaml.left,
-pre.left {
+div.language-text.left {
 	float: left;
 	width: 50%;
 	margin-right: 10px;
 }
 
 div.language-yaml.right,
-pre.right {
+div.language-text.left {
 	width: 45%;
 }
 
-.language-ascii {
+div.language-text pre {
+	display: flex;
+	justify-content: center;
+  align-items: center;
+	min-height: 260px;
+}
+
+div.language-text pre code {
 	font-size: 0.82em;
 	display: inline-block; 
 	font-family: Menlo, "Lucida Console", Monaco, monospace;

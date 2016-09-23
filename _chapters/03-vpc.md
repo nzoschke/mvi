@@ -5,7 +5,7 @@ permalink: /vpc
 
 # Virtual Private Cloud
 
-```ascii
+```text
 ┌────────────────────────────────────────────────┐
 │                                                │
 │                                                │

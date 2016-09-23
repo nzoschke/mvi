@@ -5,7 +5,7 @@ permalink: /registry
 
 # Registry
 
-```ascii
+```text
 ┌────────────────────────────────────────────────┐
 │                                                │
 │                                                │

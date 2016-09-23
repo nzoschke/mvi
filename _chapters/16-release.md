@@ -22,7 +22,7 @@ We need a Release API to:
 
 * Tell the Container Service to start containers from a specific Build ID Images
 
-```ascii
+```text
  ┌────────────────┐          
 ┌┤       LB       ├─────────┐
 │└────────────────┘         │
