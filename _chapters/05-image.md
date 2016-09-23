@@ -1,9 +1,9 @@
 ---
-title: Cryptography
-permalink: /crypto
+title: Image
+permalink: /image
 ---
 
-# Cryptography
+# Image
 
 ```text
 ┌──────────────────────────────────────┐
@@ -19,13 +19,13 @@ permalink: /crypto
 │                                      │
 │                 VPC                  │
 └──────────────────────────────────────┘
- ┏━━━━━━┓                               
- ┃Crypto┃                               
- ┗━━━━━━┛                               
+ ┌──────┐┏━━━━━┓                        
+ │Crypto│┃Image┃                        
+ └──────┘┗━━━━━┛                        
 ```
 
-A Cryptography (Crypto) service provides a way to create, import and rotate an unguessable key for encrypting data, and provides a way to get and audit access to the key for decrypting data.
+An Image service provides a private place to push, store and pull binary application and depdendency data.
 
-We need Crypto to encrypt sensitive data like VM and application secrets so no 3rd party, including the provider itself, can read it in plain-text.
+We need an Image service to efficiently store layers of new file system data for app builds, and to pull the layers of data needed to start a Container.
 
-Crypto is a stand-alone service.
+An Image service is a stand-alone service.

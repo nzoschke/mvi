@@ -47,23 +47,23 @@ The secondary purpose is practical. Any developer or ops engineer can use the me
 # Cloud Services
 
 ```text
- ┌─────────────────────────────────────┐ 
-┌┤            Load Balancer            ├┐
-│└─────────────────────────────────────┘│
-│┌─────────────────┐ ┌─────────────────┐│
-││┌─────┐┌────────┐│ │     ┌─────┐     ││
-│││web 1││worker 1││ │     │web 2│     ││
-││└─────┘└────────┘│ │     └─────┘     ││
-││      VM 1       │ │      VM 2       ││
-│└─────────────────┘ └─────────────────┘│
-│               ┌────────┐              │
-│               │Database│              │
-│               └────────┘              │
-│                  VPC                  │
-└───────────────────────────────────────┘
-┌──────┐┌────────┐┌───┐┌──────┐┌──┐┌────┐
-│Crypto││Registry││Log││Metric││KV││Blob│
-└──────┘└────────┘└───┘└──────┘└──┘└────┘
+ ┌────────────────────────────────────┐ 
+┌┤           Load Balancer            ├┐
+│└────────────────────────────────────┘│
+│┌─────────────────┐┌─────────────────┐│
+││┌─────┐┌────────┐││     ┌─────┐     ││
+│││web 1││worker 1│││     │web 2│     ││
+││└─────┘└────────┘││     └─────┘     ││
+││      VM 1       ││      VM 2       ││
+│└─────────────────┘└─────────────────┘│
+│              ┌────────┐              │
+│              │Database│              │
+│              └────────┘              │
+│                 VPC                  │
+└──────────────────────────────────────┘
+ ┌──────┐┌─────┐┌───┐┌──────┐┌──┐┌────┐ 
+ │Crypto││Image││Log││Metric││KV││Blob│ 
+ └──────┘└─────┘└───┘└──────┘└──┘└────┘ 
 ```
 
 There are eleven infrastructure services in three service classes that are necessary to run an app.
@@ -86,13 +86,13 @@ A Cryptography (Crypto) service provides a way to create, import and rotate an u
 
 #### Application Workload
 
-### [4. Container](container)
+### [4. Image](image)
+
+An Image service provides a private place to push, store and pull binary application and depdendency data.
+
+### [5. Container](container)
 
 A Container service provides a way to run many specialized process types on fewer homogeneous VMs.
-
-### [5. Registry](registry)
-
-A Registry service provides a private place to push, store and pull Container Image data.
 
 ### [6. Load Balancer](load-balancer)
 
@@ -122,45 +122,60 @@ A Blob service provides a way to save and retrieve large amounts unstructured da
 
 # Tutorials
 
-These tutorials demonstrate how we use and configure the cloud services to support the Twelve-Factor methods:
+These tutorials demonstrate how we use and configure the cloud services to run simple apps:
 
-#### Build, Release, Run
+#### Intro to Images, Containers, and Load Balancers
 
 * [Run Hello World](hello-world)
 * [Build a Custom Image](build)
-* [Release a Build](release)
+* Expose the Web Server
+* Configure a Secret
 
 #### Containers
 
-* Scaling Workers for Data Science
-* Scheduled Processes
-* Debugging a Running Container
-* Running One-Off Containers
+* Add a Second Container Type
+* Scale Containers
+* Schedule Tasks
+* Debug a Running Container
+* Run a One-Off Containers
 
 #### Load Balancers
 
-* Scaling and Securing a Web Server for APIs
-* Scaling and Securing a TCP Service
+* Secure an HTTP API
+* Secure a TCP Service
 * Health Checks
+* Rolling Deploys
 
-#### Config / Backing Services
+#### Config
 
-* Securing the Environment
-* Linking Containers
-* Linking to a Database
+* Architecture for Secret Management
+
+#### Backing Services
+
+* Link to a Database
+* Link Containers
 
 #### Visibility
 
-* Tailing App Logs
-* Processing App Logs
-* Seeing App Performance and Availability
+* Tail App Logs
+* Process App Logs
+* See App Performance and Availability
 
-# Real-World Tutorials
+# Real-World Systens
 
-These tutorials demonstrate everything together for web apps:
+These tutorials demonstrate how to tie these concepts together to run complex apps:
+
+#### Build, Release, Run
+
+* Architecture for a Build Service
+* Architecture for a Release Service
+
+#### Apps
 
 * Rails, NGINX, Postgres and Redis
 * Wordpress and MySQL
+
+# Operations
 
 These tutorials demonstrate how we maintain the infrastructure over time:
 
