@@ -52,6 +52,7 @@ Theses
   3. A Service Oriented Architecture (SOA) can provide this and has benefits
     Service Level Agreement
     API
+    Automation
     Utility pricing
     Independent scaling
 
@@ -59,10 +60,10 @@ Theses
     Secure Compute
       CPU/Memory    Virtual Machine
       Network       Virtual Private Cloud
-      Crypto        Crypto  
+      Crypto        HSM  
 
     App Workload
-      Package       Container, Registry
+      Package       Container, Image
       Config        Crypto, Blob
       Data          Database
       Proxy         Load Balancer
