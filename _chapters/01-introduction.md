@@ -88,7 +88,7 @@ A Cryptography (Crypto) service provides a way to create, import and rotate an u
 
 ### [4. Image](image)
 
-An Image service provides a private place to push, store and pull binary application and depdendency data.
+An Image service provides a private place to push, store and pull binary application and dependency data.
 
 ### [5. Container](container)
 
@@ -110,7 +110,7 @@ A Log service provides a place to send ordered text from app Containers' stdout 
 
 ### [9. Metric](metric)
 
-A Metric service provides a place to save numerical data from apps and underlying cloud srevices so operational properties of the entire system can be aggregated, analyzed and graphed in real-time and reviewed later.
+A Metric service provides a place to save numerical data from apps and underlying cloud services so operational properties of the entire system can be aggregated, analyzed and graphed in real-time and reviewed later.
 
 ### [10. Key-Value (KV)](kv)
 
